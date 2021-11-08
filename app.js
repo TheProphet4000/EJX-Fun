@@ -1,8 +1,9 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 
 app.get("/", (req,res) => {
-    res.send("Root");
+    res.sendFile("index.html", {root: path.join(__dirname, "./")});
 });
 
 app.use("/", (req,res) => {
