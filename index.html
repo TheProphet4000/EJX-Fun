@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start page</title>
+    <title>SMS</title>
 </head>
 <body>
 
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-      </form> 
+    <form method="POST" action="/">
+        <label for="pnumber">Number to send to</label><br>
+        <input type="number" id="pnumber" name="pnumber"><br>
+
+        <label for="pmessage">Your message</label><br>
+        <input type="text" id="pmessage" name="pmessage">
+
+        <input type="submit" id="psubmit" name="psubmit">
+
+    </form> 
     
 </body>
 </html>
